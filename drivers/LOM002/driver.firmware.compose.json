@@ -1,0 +1,78 @@
+{
+  "updates": [
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Philips",
+        "productId": [
+          "LOM001",
+          "LOM002",
+          "LOM005",
+          "LOM006",
+          "LOM007",
+          "LOM008"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 16783104,
+          "imageType": 277,
+          "manufacturerCode": 4107,
+          "size": 396550,
+          "name": "100B-0115-01001700-SmartPlug-EFR32MG13.zigbee",
+          "integrity": "sha512:4361808f63f16c5fc6cac68760415dc36f2dcfb11508d90deffab33c61e1557096858673dafdd7527be86fc02122627830e0280ee0cbe7501b94e83a8b009156",
+          "minFileVersion": 16782338
+        },
+        {
+          "fileVersion": 16781824,
+          "imageType": 282,
+          "manufacturerCode": 4107,
+          "size": 343744,
+          "name": "100B-011A-01001200-SmartPlug-EFR32MG21.zigbee",
+          "integrity": "sha512:515c3a7f7102aa93afe150324a61ba4339f8279c2d1fced239e0bee93673102907521613270b5faf27c6c05211e3b4d8e7a708a284f47b8e9106d47e5d8e58f3",
+          "minFileVersion": 16781060
+        }
+      ]
+    },
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Signify Netherlands B.V.",
+        "productId": [
+          "LOM001",
+          "LOM002",
+          "LOM005",
+          "LOM006",
+          "LOM007",
+          "LOM008"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 16783104,
+          "imageType": 277,
+          "manufacturerCode": 4107,
+          "size": 396550,
+          "name": "100B-0115-01001700-SmartPlug-EFR32MG13.zigbee",
+          "integrity": "sha512:4361808f63f16c5fc6cac68760415dc36f2dcfb11508d90deffab33c61e1557096858673dafdd7527be86fc02122627830e0280ee0cbe7501b94e83a8b009156",
+          "minFileVersion": 16782338
+        },
+        {
+          "fileVersion": 16781824,
+          "imageType": 282,
+          "manufacturerCode": 4107,
+          "size": 343744,
+          "name": "100B-011A-01001200-SmartPlug-EFR32MG21.zigbee",
+          "integrity": "sha512:515c3a7f7102aa93afe150324a61ba4339f8279c2d1fced239e0bee93673102907521613270b5faf27c6c05211e3b4d8e7a708a284f47b8e9106d47e5d8e58f3",
+          "minFileVersion": 16781060
+        }
+      ]
+    }
+  ]
+}

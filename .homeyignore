@@ -1,3 +1,6 @@
 # Development-only files; never needed on the Homey hub.
 /test/
 /docs/
+
+# Firmware generator (development only)
+/scripts/
