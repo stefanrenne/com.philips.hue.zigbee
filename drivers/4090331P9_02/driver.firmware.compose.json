@@ -1,0 +1,58 @@
+{
+  "updates": [
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Philips",
+        "productId": [
+          "4090330P9_02",
+          "4090331P9_02",
+          "LCP002",
+          "929003053301_02",
+          "929003052501_02"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 16787456,
+          "imageType": 287,
+          "manufacturerCode": 4107,
+          "size": 444074,
+          "name": "100B-011F-01002800-ConfLightBLE-ModuLumV3-EFR32MG21.zigbee",
+          "integrity": "sha512:2385a21a3192f9daea7738020bc1ef36dc9fe642b82c2c1cfaeea1ebb01530246b50635a04e87c4ec2da327ef5049b85e9688d67652463245ef8df267fcb5e0a",
+          "minFileVersion": 16786436
+        }
+      ]
+    },
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Signify Netherlands B.V.",
+        "productId": [
+          "4090330P9_02",
+          "4090331P9_02",
+          "LCP002",
+          "929003053301_02",
+          "929003052501_02"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 16787456,
+          "imageType": 287,
+          "manufacturerCode": 4107,
+          "size": 444074,
+          "name": "100B-011F-01002800-ConfLightBLE-ModuLumV3-EFR32MG21.zigbee",
+          "integrity": "sha512:2385a21a3192f9daea7738020bc1ef36dc9fe642b82c2c1cfaeea1ebb01530246b50635a04e87c4ec2da327ef5049b85e9688d67652463245ef8df267fcb5e0a",
+          "minFileVersion": 16786436
+        }
+      ]
+    }
+  ]
+}

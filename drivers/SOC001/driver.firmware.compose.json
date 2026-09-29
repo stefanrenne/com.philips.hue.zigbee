@@ -1,0 +1,31 @@
+{
+  "wakeInstruction": {
+    "en": "Press a button on the device, or trigger its sensor, to wake it up.",
+    "nl": "Druk op een knop van het apparaat, of activeer de sensor, om het wakker te maken."
+  },
+  "updates": [
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Signify Netherlands B.V.",
+        "productId": [
+          "SOC001"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 33576193,
+          "imageType": 293,
+          "manufacturerCode": 4107,
+          "size": 196934,
+          "name": "100B-0125-02005501-ContactSensor-EFR32MG22.zigbee",
+          "integrity": "sha512:72503079544bc2e4fca09bbce55f50b9dcb758553bbc16724dee9a59876b7b647ec8caecb6daa64654790f4c892448bcfdeb5e9e03865920f95530c639e0120e",
+          "minFileVersion": 33571585
+        }
+      ]
+    }
+  ]
+}

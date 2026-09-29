@@ -1,0 +1,52 @@
+{
+  "updates": [
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Philips",
+        "productId": [
+          "915005987101",
+          "915005987201",
+          "4080248U9"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 16786176,
+          "imageType": 280,
+          "manufacturerCode": 4107,
+          "size": 501916,
+          "name": "100B-0118-01002300-PixelLum-EFR32MG21.zigbee",
+          "integrity": "sha512:bee3e140a9efe47f38e707bf189afc1a162e7602b958a95abacbced5bab8132cb12ac5ca03aa9b051f7f2e3a39183b306347ece0e253209e31546469bbe2a9ff"
+        }
+      ]
+    },
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Signify Netherlands B.V.",
+        "productId": [
+          "915005987101",
+          "915005987201",
+          "4080248U9"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 16786176,
+          "imageType": 280,
+          "manufacturerCode": 4107,
+          "size": 501916,
+          "name": "100B-0118-01002300-PixelLum-EFR32MG21.zigbee",
+          "integrity": "sha512:bee3e140a9efe47f38e707bf189afc1a162e7602b958a95abacbced5bab8132cb12ac5ca03aa9b051f7f2e3a39183b306347ece0e253209e31546469bbe2a9ff"
+        }
+      ]
+    }
+  ]
+}

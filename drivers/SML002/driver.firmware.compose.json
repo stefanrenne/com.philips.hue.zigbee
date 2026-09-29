@@ -1,0 +1,54 @@
+{
+  "wakeInstruction": {
+    "en": "Press a button on the device, or trigger its sensor, to wake it up.",
+    "nl": "Druk op een knop van het apparaat, of activeer de sensor, om het wakker te maken."
+  },
+  "updates": [
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Philips",
+        "productId": [
+          "SML002",
+          "9290019758"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 1124103169,
+          "imageType": 269,
+          "manufacturerCode": 4107,
+          "size": 240760,
+          "name": "Sensor-ATmega_0012.sbl-ota",
+          "integrity": "sha512:3a4266047f88641f9d9706c2bfbde31f15698493203f66ba3281af4e6047829c593a45dc3ff10156d6920810e68d4e6a1bc0036749d012a3076e1fab24c734f0"
+        }
+      ]
+    },
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Signify Netherlands B.V.",
+        "productId": [
+          "SML002",
+          "9290019758"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 1124103169,
+          "imageType": 269,
+          "manufacturerCode": 4107,
+          "size": 240760,
+          "name": "Sensor-ATmega_0012.sbl-ota",
+          "integrity": "sha512:3a4266047f88641f9d9706c2bfbde31f15698493203f66ba3281af4e6047829c593a45dc3ff10156d6920810e68d4e6a1bc0036749d012a3076e1fab24c734f0"
+        }
+      ]
+    }
+  ]
+}

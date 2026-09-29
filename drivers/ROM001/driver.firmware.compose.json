@@ -1,0 +1,74 @@
+{
+  "wakeInstruction": {
+    "en": "Press a button on the device, or trigger its sensor, to wake it up.",
+    "nl": "Druk op een knop van het apparaat, of activeer de sensor, om het wakker te maken."
+  },
+  "updates": [
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Philips",
+        "productId": [
+          "ROM001",
+          "RDM003"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 33576193,
+          "imageType": 278,
+          "manufacturerCode": 4107,
+          "size": 239462,
+          "name": "100B-0116-02005501-Switch-EFR32MG13.zigbee",
+          "integrity": "sha512:3e8d304914ca531d3b78504ce821f6f15920b635c1b3cf18dac6922e1528e7efe7c71b778c25bc1ba0a18182332c2e06be25822da0bffedb08d18cee0fce3b8d",
+          "minFileVersion": 33559296
+        },
+        {
+          "fileVersion": 33576193,
+          "imageType": 281,
+          "manufacturerCode": 4107,
+          "size": 207290,
+          "name": "100B-0119-02005501-Switch-EFR32MG22.zigbee",
+          "integrity": "sha512:6678ca6bba6b057d32978d6ca461ffc9ead321ae1f947d38731d8e66c1778a98c01c0a05ecccab0a832c6106962a9fdb478634be817cfb1ba50d8c3bc37713ba",
+          "minFileVersion": 33562880
+        }
+      ]
+    },
+    {
+      "changelog": {
+        "en": "Firmware update from the Philips Hue OTA server.",
+        "nl": "Firmware-update van de Philips Hue OTA-server."
+      },
+      "device": {
+        "manufacturerName": "Signify Netherlands B.V.",
+        "productId": [
+          "ROM001",
+          "RDM003"
+        ]
+      },
+      "files": [
+        {
+          "fileVersion": 33576193,
+          "imageType": 278,
+          "manufacturerCode": 4107,
+          "size": 239462,
+          "name": "100B-0116-02005501-Switch-EFR32MG13.zigbee",
+          "integrity": "sha512:3e8d304914ca531d3b78504ce821f6f15920b635c1b3cf18dac6922e1528e7efe7c71b778c25bc1ba0a18182332c2e06be25822da0bffedb08d18cee0fce3b8d",
+          "minFileVersion": 33559296
+        },
+        {
+          "fileVersion": 33576193,
+          "imageType": 281,
+          "manufacturerCode": 4107,
+          "size": 207290,
+          "name": "100B-0119-02005501-Switch-EFR32MG22.zigbee",
+          "integrity": "sha512:6678ca6bba6b057d32978d6ca461ffc9ead321ae1f947d38731d8e66c1778a98c01c0a05ecccab0a832c6106962a9fdb478634be817cfb1ba50d8c3bc37713ba",
+          "minFileVersion": 33562880
+        }
+      ]
+    }
+  ]
+}

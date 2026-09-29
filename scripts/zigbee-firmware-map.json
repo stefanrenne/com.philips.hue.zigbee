@@ -1,0 +1,171 @@
+{
+  "_comment": [
+    "Decides which zigbee-OTA images (manufacturerCode 4107, matched on imageType) go into which driver.",
+    "Resolution per driver: an entry in \"drivers\" wins; otherwise the first matching rule in \"rules\" (top to bottom).",
+    "A rule matches when its \"pattern\" (regex) matches the driver id and its \"template\" (regex) matches one of the driver $extends templates; omitted fields always match.",
+    "imageTypes may be numbers or hex strings. An empty list means: no firmware for this driver.",
+    "Only the newest file per imageType is included unless the entry sets \"latestOnly\": false.",
+    "Confirmed via the deCONZ OTA plugin table (github.com/dresden-elektronik/deconz-ota-plugin): 0x0109 dimmer v1, 0x010D motion sensor, 0x0115/0x011A smart plug, 0x0116 smart button, 0x0119 dimmer 2021, 0x011B motion sensor 2022, 0x011C wall switch module, 0x011F Ensis, 0x0121 tap dial. Everything else is a best guess from the Hue hardware generation. Wrong entries are harmless (Homey matches manufacturerCode + imageType) but cost app size.",
+    "When the script reports a new imageType, add it to \"imageTypes\" and to a rule."
+  ],
+  "imageTypes": {
+    "0x0100": "ConnectedLamp-TI",
+    "0x0103": "LivingColors-Hue",
+    "0x0104": "ConnectedLamp-Atmel",
+    "0x0105": "WhiteLamp-Atmel",
+    "0x0108": "LivingColors-Atmel",
+    "0x0109": "Switch-ATmega",
+    "0x010B": "ModuLum-ATmega",
+    "0x010C": "ConfLight-Lamps",
+    "0x010D": "Sensor-ATmega",
+    "0x010E": "ConfLight-ModuLum",
+    "0x010F": "ConfLight-LedStrips",
+    "0x0110": "ConfLight-Lamps-EFR32MG13",
+    "0x0111": "ConfLight-ModuLum-EFR32MG13",
+    "0x0112": "ConfLightBLE-Lamps-EFR32MG13",
+    "0x0114": "ConfLightBLE-Lamps-EFR32MG21",
+    "0x0115": "SmartPlug-EFR32MG13",
+    "0x0116": "Switch-EFR32MG13",
+    "0x0117": "ConfLightBLE-ModuLum-EFR32MG21",
+    "0x0118": "PixelLum-EFR32MG21",
+    "0x0119": "Switch-EFR32MG22",
+    "0x011A": "SmartPlug-EFR32MG21",
+    "0x011B": "Sensor-EFR32MG22",
+    "0x011C": "SwitchModule-EFR32MG13",
+    "0x011D": "ConfLight-ModuLumV2-EFR32MG13",
+    "0x011E": "ConfLight-PortableV2-EFR32MG13",
+    "0x011F": "ConfLightBLE-ModuLumV3-EFR32MG21",
+    "0x0120": "ConfLightBLE-PortableV3-EFR32MG21",
+    "0x0121": "Switch-EFR32MG22-40xf",
+    "0x0122": "SwitchModule-EFR32MG22",
+    "0x0123": "PixelLumXL-EFR32MG21",
+    "0x0125": "ContactSensor-EFR32MG22",
+    "0x0127": "MSD-EFR32MG21",
+    "0x0128": "Chime-EFR32MG21",
+    "0x0129": "Light-EFR32MG26",
+    "0x012A": "Light-SiMG301",
+    "0x012B": "Switch-EFR32MG27",
+    "0x012D": "MSD-SiMG301",
+    "0x012F": "Switch-SiMG301"
+  },
+  "drivers": {
+    "LOM002": [
+      "0x0115",
+      "0x011A"
+    ],
+    "SOC001": [
+      "0x0125"
+    ],
+    "SML001": [
+      "0x010D"
+    ],
+    "SML001-occupancy": [
+      "0x010D",
+      "0x011B"
+    ],
+    "SML002": [
+      "0x010D"
+    ],
+    "SML002-occupancy": [
+      "0x010D",
+      "0x011B"
+    ],
+    "RWL000": [
+      "0x0109"
+    ],
+    "RWL022": [
+      "0x0119"
+    ],
+    "ROM001": [
+      "0x0116",
+      "0x0119"
+    ],
+    "ROM002": [
+      "0x0122"
+    ],
+    "RDM001": [
+      "0x011C",
+      "0x0122"
+    ],
+    "RDM002": [
+      "0x0121"
+    ]
+  },
+  "rules": [
+    {
+      "name": "Pre-2019 hardware (not supported)",
+      "pattern": "^(LCT00|LCT01|LLC|LST00|LWB|LWW|LTW01)",
+      "imageTypes": []
+    },
+    {
+      "name": "Motion sensors (2022+)",
+      "pattern": "^SML",
+      "imageTypes": [
+        "0x011B"
+      ]
+    },
+    {
+      "name": "Contact sensors",
+      "pattern": "^SOC",
+      "imageTypes": [
+        "0x0125"
+      ]
+    },
+    {
+      "name": "Smart plugs",
+      "pattern": "^LOM",
+      "imageTypes": [
+        "0x011A"
+      ]
+    },
+    {
+      "name": "Ensis / Flourish (ModuLumV3)",
+      "pattern": "^4090",
+      "imageTypes": [
+        "0x011F"
+      ]
+    },
+    {
+      "name": "Hue Go (PortableV3)",
+      "pattern": "^(LCT026|929003128501)$",
+      "imageTypes": [
+        "0x0120"
+      ]
+    },
+    {
+      "name": "Gradient / pixel products (PixelLum)",
+      "pattern": "^(LCX|LGT|915005987101)",
+      "imageTypes": [
+        "0x0118"
+      ]
+    },
+    {
+      "name": "Zigbee luminaires (ModuLumV2, EFR32MG13)",
+      "pattern": "^(LTC|LTP|LCF|LCS|LCT024)",
+      "imageTypes": [
+        "0x011D"
+      ]
+    },
+    {
+      "name": "Bulbs, GU10 spots and bulb-based fixtures (Bluetooth, EFR32MG21)",
+      "pattern": "^(LCA|LTA|LWA|LCE|LTE|LWE|LCG|LTG|LWG|LCO|LTO|LWO|LCV|LTV|LWV|LWU|LCU|LTD|LTW|LCD|LCY|LCZ|504|506[23]|5309|5633|3418131|929003074701)",
+      "imageTypes": [
+        "0x0114"
+      ]
+    },
+    {
+      "name": "Luminaires and lightstrips (Bluetooth ModuLum, EFR32MG21)",
+      "pattern": "^([13][0-9]{6}P|44[0-9]{5}P|5060|915|929|LCL|LCW|HBL|HML)",
+      "imageTypes": [
+        "0x0117"
+      ]
+    },
+    {
+      "name": "Fallback for any other light",
+      "template": "^light_",
+      "imageTypes": [
+        "0x0114"
+      ]
+    }
+  ]
+}
